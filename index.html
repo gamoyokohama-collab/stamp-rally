@@ -493,6 +493,9 @@ body { background: var(--bg); color: var(--text); font-family: 'M PLUS Rounded 1
       <option value="横浜市立横浜商業高等学校別科">横浜市立横浜商業高等学校別科</option>
       <option value="横浜芸術専修学校">横浜芸術専修学校</option>
       <option value="MDFビューティカレッジ">MDFビューティカレッジ</option>
+      <option value="岩谷学園">岩谷学園</option>
+      <option value="アイム湘南美容専門学校">アイム湘南美容専門学校</option>
+      <option value="ベルエポック美容専門学校">ベルエポック美容専門学校</option>
     </select>
     <label class="input-label">📚 学年</label>
     <select class="input-select" id="select-grade" onchange="checkReady()">
@@ -1184,7 +1187,10 @@ function generateUID(school, grade) {
     '鎌倉早見美容芸術専門学校': 'KH',
     '横浜市立横浜商業高等学校別科': 'YS',
     '横浜芸術専修学校': 'YG',
-    'MDFビューティカレッジ': 'MD'
+    'MDFビューティカレッジ': 'MD',
+    '岩谷学園': 'IW',
+    'アイム湘南美容専門学校': 'IM',
+    'ベルエポック美容専門学校': 'BE'
   };
   const gradeCode = grade.replace('年生', '');
   const code = (schoolCode[school] || 'XX') + gradeCode;
